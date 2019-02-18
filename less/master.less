@@ -1,0 +1,60 @@
+/* less variables */
+@purple: #9686d5;
+@dark: #0e0c13;
+/* end of less variables */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: @dark;
+    color: white;
+}
+
+#container {
+    width: 440px;
+    height: 62px;
+    margin: calc(50vh - 31px) auto;
+    font-family: monospace;
+}
+
+.button {
+    width: 210px;
+    height: 38px;
+    border: 1px solid @purple;
+    float: left;
+    margin: 0 4px;
+    text-align: center;
+    line-height: 38px;
+    font-family: monospace;
+    cursor: pointer;
+    user-select: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.login {
+    background: @dark;
+    color: @purple;
+}
+
+.install {
+    background: @purple;
+    color: @dark;
+}
+
+.info {
+    height: 22px;
+    float: right;
+    margin: 0 4px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    color: @purple;
+    cursor: pointer;
+    user-select: none;
+}
