@@ -1,6 +1,12 @@
 /* less variables */
 @purple: #9686d5;
+@green: #43cc92;
 @dark: #0e0c13;
+@black: #23212c;
+@ninjalight: #23253b;
+@ninjadark: #1b1d2d;
+@ninjablack: #21202d;
+@twitch: #19171c;
 /* end of less variables */
 
 html {
@@ -11,26 +17,26 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: @dark;
+    background: @twitch;
     color: white;
 }
 
 #container {
-    width: 440px;
-    height: 62px;
-    margin: calc(50vh - 31px) auto;
-    font-family: monospace;
+    width: 400px;
+    height: 58px;
+    margin: calc(50vh - 29px) auto;
+    font-family: 'Inconsolata' ,'Space Mono', monospace;
 }
 
 .button {
-    width: 210px;
-    height: 38px;
-    border: 1px solid @purple;
+    width: 188px;
+    height: 32px;
+    border: 2px solid @purple;
     float: left;
     margin: 0 4px;
     text-align: center;
-    line-height: 38px;
-    font-family: monospace;
+    line-height: 32px;
+    font-family: 'Inconsolata' ,'Space Mono', monospace;
     cursor: pointer;
     user-select: none;
     font-size: 12px;
@@ -38,13 +44,32 @@ body {
 }
 
 .login {
-    background: @dark;
+    background: @twitch;
     color: @purple;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.login:hover {
+    border: 2px solid #7866be;
 }
 
 .install {
     background: @purple;
-    color: @dark;
+    color: @twitch;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.install:hover {
+    background: #7866be;
+    border: 2px solid #7866be;
 }
 
 .info {
@@ -57,4 +82,13 @@ body {
     color: @purple;
     cursor: pointer;
     user-select: none;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+.info:hover {
+    color: #7866be;
 }
