@@ -7,6 +7,9 @@
 @ninjadark: #1b1d2d;
 @ninjablack: #21202d;
 @twitch: #19171c;
+@darkpurple: #7866be;
+@newpurple: #7f4edb;
+@red: #bb2443;
 /* end of less variables */
 
 html {
@@ -17,19 +20,19 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: @twitch;
+    background: black;
     color: white;
 }
 
 .logo {
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     background-image: url("../logo.png");
     background-repeat: no-repeat;
-    background-size: 130px auto;
+    background-size: 100px auto;
     background-position: 50% 50%;
     position: absolute;
-    left: calc(50vw - 65px);
+    left: calc(50vw - 50px);
     top: 20vh;
 }
 
@@ -70,13 +73,20 @@ body {
 }
 
 .install {
-    background: @purple;
     color: @twitch;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    background: @newpurple;
+    background: -moz-linear-gradient(-45deg,  @newpurple 0%, @darkpurple 50%, @darkpurple 63%, @purple 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,@newpurple), color-stop(50%,@darkpurple), color-stop(63%,@darkpurple), color-stop(100%,@purple));
+    background: -webkit-linear-gradient(-45deg,  @newpurple 0%,@darkpurple 50%,@darkpurple 63%,@purple 100%);
+    background: -o-linear-gradient(-45deg,  @newpurple 0%,@darkpurple 50%,@darkpurple 63%,@purple 100%);
+    background: -ms-linear-gradient(-45deg,  @newpurple 0%,@darkpurple 50%,@darkpurple 63%,@purple 100%);
+    background: linear-gradient(135deg,  @newpurple 0%,@darkpurple 50%,@darkpurple 63%,@purple 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@newpurple', endColorstr='@purple',GradientType=1 );
 }
 
 .install:hover {
