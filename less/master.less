@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* less variables */
 @purple: #9686d5;
 @green: #43cc92;
@@ -84,3 +85,121 @@ body {
     background: linear-gradient(135deg,  @newpurple 0%,@darkpurple 50%,@darkpurple 63%,@purple 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@newpurple', endColorstr='@purple',GradientType=1 );
 }
+=======
+/* less variables */
+@purple: #9686d5;
+@green: #43cc92;
+@dark: #0e0c13;
+@black: #23212c;
+@ninjalight: #23253b;
+@ninjadark: #1b1d2d;
+@ninjablack: #21202d;
+@twitch: #19171c;
+@darkpurple: #7866be;
+@newpurple: #7f4edb;
+@red: #bb2443;
+/* end of less variables */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-image: url("../logo.png");
+    background-repeat: no-repeat;
+    background-size: 100px auto;
+    background-position: 50% 50%;
+    position: absolute;
+    left: calc(50vw - 50px);
+    top: 20vh;
+}
+
+#container {
+    width: 400px;
+    height: 58px;
+    margin: calc(50vh - 29px) auto;
+    font-family: 'Inconsolata' ,'Space Mono', monospace;
+}
+
+.button {
+    width: 188px;
+    height: 32px;
+    border: 2px solid @purple;
+    float: left;
+    margin: 0 4px;
+    text-align: center;
+    line-height: 32px;
+    font-family: 'Inconsolata' ,'Space Mono', monospace;
+    cursor: pointer;
+    user-select: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.login {
+    background: @twitch;
+    color: @purple;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.login:hover {
+    border: 2px solid #7866be;
+}
+
+.install {
+    color: @twitch;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: @newpurple;
+    background: -moz-linear-gradient(-45deg,  @newpurple 0%, @darkpurple 50%, @darkpurple 63%, @purple 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,@newpurple), color-stop(50%,@darkpurple), color-stop(63%,@darkpurple), color-stop(100%,@purple));
+    background: -webkit-linear-gradient(-45deg,  @newpurple 0%,@darkpurple 50%,@darkpurple 63%,@purple 100%);
+    background: -o-linear-gradient(-45deg,  @newpurple 0%,@darkpurple 50%,@darkpurple 63%,@purple 100%);
+    background: -ms-linear-gradient(-45deg,  @newpurple 0%,@darkpurple 50%,@darkpurple 63%,@purple 100%);
+    background: linear-gradient(135deg,  @newpurple 0%,@darkpurple 50%,@darkpurple 63%,@purple 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@newpurple', endColorstr='@purple',GradientType=1 );
+}
+
+.install:hover {
+    background: #7866be;
+    border: 2px solid #7866be;
+}
+
+.info {
+    height: 22px;
+    float: right;
+    margin: 0 4px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    color: @purple;
+    cursor: pointer;
+    user-select: none;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+.info:hover {
+    color: #7866be;
+}
+>>>>>>> 5e435b74079ae6d00d1b1c7f95816aca402616d7
