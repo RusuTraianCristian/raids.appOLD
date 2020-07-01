@@ -1,0 +1,86 @@
+/* less variables */
+@purple: #9686d5;
+@green: #43cc92;
+@dark: #0e0c13;
+@black: #23212c;
+@ninjalight: #23253b;
+@ninjadark: #1b1d2d;
+@ninjablack: #21202d;
+@twitch: #19171c;
+@darkpurple: #7866be;
+@newpurple: #7f4edb;
+@red: #bb2443;
+/* end of less variables */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-image: url("../logo.png");
+    background-repeat: no-repeat;
+    background-size: 100px auto;
+    background-position: 50% 50%;
+    position: absolute;
+    text-align: center;
+    line-height: 264px;
+    color: @darkpurple;
+    font-size: 37px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    left: calc(50vw - 50px);
+    top: 20vh;
+    user-select: none;
+}
+
+#container {
+    width: 400px;
+    height: 48px;
+    margin: calc(50vh - 24px) auto;
+    font-family: 'Inconsolata' ,'Space Mono', monospace;
+}
+
+.button {
+    width: 188px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    float: left;
+    margin: 0 6px;
+    font-family: 'Inconsolata' ,'Space Mono', monospace;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+}
+
+.login, .install {
+    width: 188px;
+    border: none;
+    height: 48px;
+    line-height: 48px;
+    color: @twitch;
+    background: @darkpurple;
+}
+
+.login:hover, .install:hover {
+    background: @newpurple;
+    background: -moz-linear-gradient(-45deg,  @newpurple 0%, @darkpurple 50%, @darkpurple 63%, @purple 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,@newpurple), color-stop(50%,@darkpurple), color-stop(63%,@darkpurple), color-stop(100%,@purple));
+    background: -webkit-linear-gradient(-45deg,  @newpurple 0%,@darkpurple 50%,@darkpurple 63%,@purple 100%);
+    background: -o-linear-gradient(-45deg,  @newpurple 0%,@darkpurple 50%,@darkpurple 63%,@purple 100%);
+    background: -ms-linear-gradient(-45deg,  @newpurple 0%,@darkpurple 50%,@darkpurple 63%,@purple 100%);
+    background: linear-gradient(135deg,  @newpurple 0%,@darkpurple 50%,@darkpurple 63%,@purple 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@newpurple', endColorstr='@purple',GradientType=1 );
+}
