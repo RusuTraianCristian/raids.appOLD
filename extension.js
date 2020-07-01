@@ -21,9 +21,9 @@ logExt.onclick = async () => {
     } finally {
         console.log("Request done.");
     }
-}
+}//dasda
 
-    
+
 =======
 const clientId = 'ptm1pmj69bfuceli46nae7bfhi7q8n';
 const url = `https://api.twitch.tv/extensions/${clientId}/live_activated_channels`;
@@ -49,5 +49,5 @@ logExt.onclick = async () => {
     }
 }
 
-    
+
 >>>>>>> 5e435b74079ae6d00d1b1c7f95816aca402616d7
